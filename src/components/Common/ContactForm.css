@@ -1,0 +1,101 @@
+.contact-form {
+  position: fixed;
+  max-width: 350px;
+  right: 45px;
+  bottom: 100px;
+  margin: 20px auto;
+  padding: 18px;
+  color: black;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  z-index: 1000;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"],
+.contact-form textarea {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  font-size: 15px;
+  width: 100%;
+  background-color: rgb(223, 223, 223);
+  box-sizing: border-box;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+button.enabled {
+  margin-top: 5%;
+  border: none;
+  border-radius: 4px;
+  height: 30px;
+  margin-left: 70%;
+  font-size: 16px;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+button.disabled {
+  margin-top: 5%;
+  border: none;
+  border-radius: 4px;
+  height: 30px;
+  margin-left: 70%;
+  background-color: grey;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: not-allowed;
+}
+@media (max-width: 500px) {
+  .contact-form {
+    width: 100%;
+    left: 3%;
+    bottom: 90px;
+    padding: 15px;
+    box-shadow: none;
+    border: 1px solid #ddd;
+  }
+
+  .contact-form input[type="text"],
+  .contact-form input[type="email"],
+  .contact-form input[type="tel"],
+  .contact-form textarea {
+    font-size: 12px;
+  }
+
+  .contact-form button.enabled {
+    margin-top: 5%;
+    border: none;
+    border-radius: 4px;
+    height: 30px;
+    margin-left: 70%;
+    font-size: 16px;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .contact-form button.disabled {
+    margin-top: 5%;
+    border: none;
+    border-radius: 4px;
+    height: 30px;
+    margin-left: 70%;
+    background-color: grey;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: not-allowed;
+  }
+}

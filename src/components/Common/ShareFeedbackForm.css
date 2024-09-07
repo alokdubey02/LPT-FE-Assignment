@@ -1,0 +1,116 @@
+.share-feedback-form {
+  position: fixed;
+  max-width: 350px;
+  right: 45px;
+  bottom: 100px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1000;
+  color: black;
+}
+
+.share-feedback-form textarea {
+  margin-top: 25px;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  width: 93%;
+  background-color: rgb(223, 223, 223);
+  height: 100px;
+  resize: vertical;
+}
+
+.share-feedback-form input[type="email"] {
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  width: 93%;
+  background-color: rgb(223, 223, 223);
+}
+
+.share-feedback-form label {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.share-feedback-form label input {
+  margin-right: 8px;
+}
+
+button.enabled {
+  margin-top: 5%;
+  border: none;
+  border-radius: 4px;
+  height: 30px;
+  margin-left: 70%;
+  font-size: 16px;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+button.disabled {
+  margin-top: 5%;
+  border: none;
+  border-radius: 4px;
+  height: 30px;
+  margin-left: 70%;
+  background-color: grey;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: not-allowed;
+}
+
+@media (max-width: 500px) {
+  .share-feedback-form {
+    width: 100%;
+    left: 3%;
+    bottom: 90px;
+    padding: 15px;
+    box-shadow: none;
+    border: 1px solid #ddd;
+  }
+
+  .share-feedback-form input[type="text"],
+  .share-feedback-form input[type="email"],
+  .share-feedback-form input[type="tel"],
+  .share-feedback-form textarea {
+    font-size: 12px;
+  }
+
+  .share-feedback-form button.enabled {
+    margin-top: 5%;
+    border: none;
+    border-radius: 4px;
+    height: 30px;
+    margin-left: 70%;
+    font-size: 16px;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .share-feedback-form button.disabled {
+    margin-top: 5%;
+    border: none;
+    border-radius: 4px;
+    height: 30px;
+    margin-left: 70%;
+    background-color: grey;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: not-allowed;
+  }
+}

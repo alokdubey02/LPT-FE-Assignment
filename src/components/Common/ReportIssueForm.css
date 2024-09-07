@@ -1,0 +1,120 @@
+.report-issue-form {
+  position: fixed;
+  max-width: 350px;
+  right: 45px;
+  bottom: 100px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  z-index: 1000;
+}
+
+.report-issue-form select {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  background-color: rgb(223, 223, 223);
+  font-size: 16px;
+  font-weight: 500;
+  height: 40px;
+}
+
+.report-issue-form textarea {
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  height: 100px;
+  background-color: rgb(223, 223, 223);
+  resize: vertical;
+}
+
+button.enabled {
+  margin-top: 5%;
+  border: none;
+  border-radius: 4px;
+  height: 30px;
+  margin-left: 70%;
+  font-size: 16px;
+  color: white;
+  background-color: black;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+button.disabled {
+  margin-top: 5%;
+  border: none;
+  border-radius: 4px;
+  height: 30px;
+  margin-left: 70%;
+  background-color: grey;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: not-allowed;
+}
+
+.report-issue-form input[type="email"] {
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  /* width: 93%; */
+  background-color: rgb(223, 223, 223);
+}
+
+.thank-you-message {
+  text-align: left;
+  padding: 1px;
+  height: fit-content;
+  font-size: 16px;
+}
+
+@media (max-width: 500px) {
+  .report-issue-form {
+    width: 100%;
+    left: 3%;
+    bottom: 90px;
+    padding: 15px;
+    box-shadow: none;
+    border: 1px solid #ddd;
+  }
+
+  .report-issue-form input[type="text"],
+  .report-issue-form input[type="email"],
+  .report-issue-form input[type="tel"],
+  .report-issue-form textarea {
+    font-size: 12px;
+  }
+
+  .report-issue-form button.enabled {
+    margin-top: 5%;
+    border: none;
+    border-radius: 4px;
+    height: 30px;
+    margin-left: 70%;
+    font-size: 16px;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .report-issue-form button.disabled {
+    margin-top: 5%;
+    border: none;
+    border-radius: 4px;
+    height: 30px;
+    margin-left: 70%;
+    background-color: grey;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: not-allowed;
+  }
+}
